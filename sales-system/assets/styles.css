@@ -1,0 +1,48 @@
+/* SalesTrack – Global Styles (Forest Green Theme) */
+
+:root {
+    --primary: #166534;
+    --primary-hover: #14532d;
+    --primary-light: #dcfce7;
+    --primary-focus: rgba(22,101,52,.12);
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+
+/* Navbar tweaks */
+.navbar .nav-link { font-weight: 500; font-size: .92rem; }
+.navbar .nav-link.active { color: #fff !important; font-weight: 600; }
+
+/* Cards */
+.card { border-radius: 12px; }
+.card-header { border-radius: 12px 12px 0 0 !important; }
+
+/* Buttons */
+.btn { font-weight: 500; border-radius: 8px; }
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
+
+/* Table */
+.table th { font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .03em; color: #64748b; border-bottom: 1px solid #e2e8f0; }
+.table td { vertical-align: middle; }
+
+/* Form */
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 .2rem var(--primary-focus);
+}
+.form-label { font-weight: 600; font-size: .88rem; }
+
+/* Badge */
+.badge { font-weight: 500; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
