@@ -52,27 +52,31 @@ CREATE TABLE IF NOT EXISTS sales (
 );
 
 -- Default admin user (password: admin123)
-INSERT INTO users (username, password, full_name, role) VALUES
+INSERT INTO users (username, `password`, full_name, role) VALUES
 ('admin', 'admin123', 'System Admin', 'admin');
 
--- Sample products
+-- Products
 INSERT INTO products (product_name, category, unit_price, stock_quantity) VALUES
-('Laptop Pro 15"', 'Electronics', 45000.00, 20),
+('IPhone 17', 'Electronics', 75000.00, 15),
 ('Wireless Mouse', 'Accessories', 850.00, 50),
 ('USB-C Hub', 'Accessories', 1200.00, 35),
 ('Mechanical Keyboard', 'Electronics', 3500.00, 15),
-('Monitor 24"', 'Electronics', 12000.00, 10);
+('MacBook10', 'Electronics', 100000.01, 5);
 
--- Sample customers
-INSERT INTO customers (customer_name, email, phone) VALUES
-('Juan dela Cruz', 'juan@email.com', '09171234567'),
-('Maria Santos', 'maria@email.com', '09281234567'),
-('Pedro Reyes', 'pedro@email.com', '09391234567');
+-- Customers
+INSERT INTO customers (customer_name, email, phone, address) VALUES
+('Lebrone Aramil', 'leb@gmail.com', '09931234567', 'brgy tabi-tabi lang'),
+('David Jamil C. Esteban', 'doobay@gmail.com', '09123456789', 'brgy lipad laging high'),
+('Julian Carl Malolos', 'atJulian@email.com', '09391234567', 'where at @alaminos'),
+('Aaron Mercado', 'AaronMercado@gmail.com', '093718273681', 'jeepney'),
+('Sam Ceremonia', 'samceremonia@gmail.com', '09123456789', 'Energy Revive');
 
--- Sample sales
+-- Sales
 INSERT INTO sales (customer_id, product_id, quantity, unit_price, total_amount, sale_date, payment_status) VALUES
-(1, 1, 1, 45000.00, 45000.00, '2025-03-01', 'paid'),
 (2, 2, 2, 850.00, 1700.00, '2025-03-05', 'paid'),
 (3, 4, 1, 3500.00, 3500.00, '2025-03-10', 'pending'),
 (1, 3, 3, 1200.00, 3600.00, '2025-03-15', 'paid'),
-(2, 5, 1, 12000.00, 12000.00, '2025-03-20', 'pending');
+(2, 4, 1, 3500.00, 3500.00, '2026-04-01', 'pending'),
+(5, 1, 2, 75000.00, 150000.00, '2026-04-01', 'pending'),
+(4, 5, 1, 100000.01, 100000.01, '2026-04-01', 'cancelled'),
+(4, 5, 1, 100000.01, 100000.01, '2026-04-01', 'cancelled');
