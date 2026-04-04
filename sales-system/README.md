@@ -1,7 +1,7 @@
 SalesTrack – Sales Tracking System
 
 ITEL 203 – Web Systems and Technologies | Group Performance Task #2
-TESTINGgit add .
+
 Members:
 1. Lebrone Aramil
 2. David Esteban
@@ -20,7 +20,7 @@ Tech Stack
 PHP · MySQL · HTML/CSS · Bootstrap 5 · Chart.js · JavaScript · XAMPP
 
 File Structure:
-
+```
 sales-system/
 ├── config.php          DB connection + session start
 ├── auth_check.php      Login guard (include on protected pages)
@@ -36,3 +36,4 @@ sales-system/
 ├── database.sql        Full DB schema + sample data
 └── assets/
     └── styles.css      Global shared styles
+```
